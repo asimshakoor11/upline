@@ -1,0 +1,457 @@
+/**
+Theme Name: Your Virtual Upline Platform
+Author: Contemplate Design
+Author URI: https://contemplatedesign.com
+Description: Child theme for Astra Pro.
+Version: 1.4.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: your-virtual-upline-platform
+Template: astra
+*/
+
+/*-- Astra --*/
+.ast-single-post .entry-content a, .ast-comment-content a:not(.ast-comment-edit-reply-wrap a) {
+  text-decoration: none !important;
+}
+
+header.entry-header .entry-meta,
+header.entry-header.ast-no-title {
+	display: none !important;
+}
+
+/*-- Font Awesome --*/
+.fa, .fas, .far {
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/*-- Share Link --*/
+.sharelink {
+	font-weight: bold;
+	display: inline;
+	color: #6764fa;
+}
+.sharelink::before {
+  content: 'Your Share Link: ';
+  font-weight: normal;
+  padding: 0 10px 0 30px;
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+  color: #1b065e;
+  background: url('https://courses.yourvirtualupline.com/wp-content/uploads/2023/05/ShareTheLove-link-icon.png') left center no-repeat;
+  background-size: contain;
+}
+
+.copy-the-code-inside-wrap .sharelink .copy-the-code-button {
+	top: -8px;
+}
+.copy-the-code-wrap.copy-the-code-style-svg-icon .copy-the-code-button svg {
+    fill: #b8b6f9;
+}
+
+/*-- Learndash --*/
+.ld-item-components .ld-item-component.download {
+    padding: 4px 10px;
+    background: #6764fa;
+    border-radius: 30px;
+    color: #fff;
+    font-size: .825em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 5px;
+    letter-spacing: .5px;
+
+}
+.ld-item-components .ld-item-component.download:hover {
+    background: #7E7BFB;
+}
+
+/*-- WooCommerce --*/
+.ast-separate-container .ast-woocommerce-container {
+  background-color: transparent !important;
+}
+.woocommerce form .quantity .qty {
+	width: auto !important;
+	margin-left: 0 !important;
+}
+
+.shop_table .order-again {
+	display: none;
+}
+
+.woocommerce-cart .return-to-shop,
+.no_subscriptions.woocommerce-message a.button { 
+	display: none !important; 
+}
+
+a#editYourCart {
+	color: #fff !important;
+	background: #ffae73 !important;
+	padding: 5px 15px !important;
+	border-radius: 30px !important;
+	text-transform: uppercase !important;
+	font-size: 12px !important;
+}
+a#editYourCart:hover {
+	background: #6764FA !important;
+}
+
+.woopq-quantity-hidden  {
+	display: none !important;
+}
+
+/*-- CaratFlows --*/
+@media only screen and (max-width: 768px) {
+	body .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .wcf-cartflows-review-order-wrapper {
+  		display: block;
+	}
+}
+
+/*-- Ultimate Post Grid --*/
+#wpupg-grid-lsg-library {
+	width: 100%;
+}
+.wpupg-filter-container {
+  padding: 10px;
+  margin: 5px 0;
+  background: #fafafa;
+}
+.wpupg-filter-checkboxes .wpupg-filter-checkboxes-term-container label{
+	width: auto;
+}
+
+/*-- Events --*/
+.mec-booking-button {
+	display: none !important;
+}
+
+/*-- Smart Coupons --*/
+.gift-certificate.sc_info_box {
+	border: 2px solid #ebebeb;
+	background: transparent;
+}
+.gift-certificate.sc_info_box > h3,
+.gift-certificate.sc_info_box > p {
+	margin: 0 0 5px 0;
+}
+.gift-certificate-show-form > p {
+	display: none;
+}
+
+/* Register form strat */
+::placeholder, ::-webkit-input-placeholder {
+	font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #7e7e7e !important;
+}
+body:not(.woocommerce-checkout) .ast-checkout-labels-as-placeholders ::placeholder,
+body:not(.woocommerce-checkout) .ast-checkout-labels-as-placeholders ::-webkit-input-placeholder {
+	color: #fff !important;
+}
+#wcf-optin-form input {
+	padding: 16px 15px;
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px !important;
+	color: #1A35FF;
+	border-radius: 10px;
+	border: none !important;
+}
+#wcf-optin-form label {
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #2C2C2C;
+	margin-top: 16px;
+}
+#wcf-optin-form p.wcf-anim-label label {
+	display: none;
+}
+#wcf-optin-form .wcf-optin-form .woocommerce #order_review button {
+	position: relative;
+	min-height: 55px;
+	width: 100%;
+	height: 55px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #1A35FF;
+	padding: 16px 15px 15px;
+	color: #fff;
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
+	text-align: center;
+	display: block !important;
+	border: none;
+}
+#wcf-optin-form .wcf-optin-form .woocommerce #order_review button:before {
+	position: absolute;
+	content: "Register Now!";
+	left: 5px;
+	top: 5px;
+	width: 100%;
+	height: 55px;
+	background-color: #fff;
+	z-index: 0;
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 16px 15px 15px;
+	text-transform: uppercase;
+	color: #1A35FF;
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
+}
+#wcf-optin-form .wcf-optin-form .woocommerce #order_review button:after {
+	position: absolute;
+	content: "Register Now!";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 55px;
+	background-color: #1A35FF;
+	z-index: 0;
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 16px 15px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
+	opacity: 1 !important;
+}
+#wcf-optin-form .wcf-optin-form .woocommerce #order_review button:hover:before {
+	z-index: 2;
+	left: 0;
+	top: 0;
+}
+#wcf-optin-form .wcf-optin-form .woocommerce #order_review button:hover:after {
+	left: 5px;
+	top: 5px;
+}
+#wcf-optin-form .wcf-optin-form-one-column .woocommerce-checkout #order_review {
+    width: 100%;
+    height: 55px;
+}
+
+#registerForm .elementor-form-fields-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#registerForm input {
+    padding: 16px 15px 15px;
+}
+#registerForm .elementor-field-type-submit {
+    max-width: 155px;
+}
+#registerForm .elementor-form .elementor-button.elementor-size-sm {
+    min-height: 55px;
+}
+#registerForm button:focus {
+    outline: none !important;
+}
+#registerForm button:before {
+    position: absolute;
+    content: "Register";
+    left: 5px;
+    top: 5px;
+    width: 155px;
+    height: 55px;
+    background-color: #fff;
+    z-index: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 15px 15px;
+    text-transform: uppercase;
+    color: #1A35FF;
+	border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+#registerForm button > span {
+    width: 155px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1A35FF;
+    padding: 16px 15px 15px;
+    color: #fff;
+		border-radius: 10px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    display: block
+}
+#registerForm button:hover:before{
+    top: 0;
+    left: 0;
+    z-index: 2
+}
+#registerForm button:hover > span {
+    top: 5px;
+    left: 5px;
+    z-index: 0;
+}
+#registerForm .elementor-field-group.elementor-error .elementor-message {
+    display: none;
+}
+#registerForm .elementor-message.elementor-message-danger {
+    color: #f91a4a;
+}
+#registerForm .elementor-field-group.elementor-error input {
+        -webkit-box-shadow: inset 0px 0px 0px 2px #f91a4a;
+    box-shadow: inset 0px 0px 0px 2px #f91a4a;
+}
+@media(max-width: 768px) {
+    #registerForm .elementor-form-fields-wrapper {
+        flex-direction: column;
+    }
+    #registerForm .elementor-field-type-submit, #registerForm button, #registerForm button:before, #registerForm button > span {
+        max-width: 100%;
+        width: 100%;
+    }
+    #registerForm button > span {
+        left: 7.5px;
+        width: calc(100% - 15px);
+    }
+    #registerForm button:before {
+        left: 12.5px;
+        width: calc(100% - 15px);
+    }
+    #registerForm button:hover:before{
+        left: 7.5px;
+    }
+    #registerForm button:hover > span {   top: 5px;
+        left: 12.5px;
+    }
+    #registerForm .elementor-field-group {
+        margin-bottom: 0 !important;
+    }
+    #registerForm .elementor-field-group + .elementor-field-group {
+        margin-top: 25px;
+    }
+    #registerForm .elementor-field-type-submit {
+        margin-top: 35px !important;
+    }
+    #registerForm input {
+        padding: 13px 15px;
+    }
+}
+/* Register form end */
+
+/* Counter start */
+#date-counter .elementor-countdown-item {
+    position: relative;
+    width: 175px !important;
+    padding: 16px 15px 0;
+}
+#date-counter .elementor-countdown-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(253.32deg, rgba(255, 255, 255, 0.25) -4.5%, #FFFFFF 106.31%);
+    opacity: 0.2;
+    border-radius: 10px;
+}
+#date-counter .elementor-countdown-digits {
+    position: relative;
+    padding: 20px 35px;
+}
+#date-counter .elementor-countdown-digits:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(253.32deg, rgba(255, 255, 255, 0.25) -4.5%, #FFFFFF 106.31%);
+    opacity: 0.2;
+    border-radius: 10px;
+}
+
+@media(max-width: 768px) {
+   #date-counter .elementor-countdown-item {
+        position: relative;
+        width: 68px !important;
+        padding: 6px 5px;
+    } 
+    #date-counter .elementor-countdown-digits {
+        padding: 6px 9px;
+    }
+}
+/* Counter end */
+
+/* Forms start */
+/*
+#wcf-optin-form input::placeholder, #wcf-optin-form textarea::placeholder {
+    color: #fff; !important;
+    opacity: 0 !important;
+}*/
+
+.elementor-933 .elementor-element.elementor-element-1941f71 .cartflows-elementor__checkout-form .wcf-embed-checkout-form #order_review .wcf-custom-coupon-field input[type="text"]::placeholder  {
+	opacity: 1 !important;
+	 font-family: 'Barlow'!important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+	color: #7e7e7e !important;
+}
+.elementor-933 .elementor-element.elementor-element-1941f71 .cartflows-elementor__checkout-form .wcf-embed-checkout-form #order_review .wcf-custom-coupon-field input[type="text"] {
+	font-family: 'Barlow'!important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+	color: #1A35FF !important;
+}
+.woocommerce-billing-fields__field-wrapper input {
+	line-height: 24px !important;
+}
+.woocommerce-billing-fields__field-wrapper .select2-selection {
+	padding: 16px 15px 15px !important;
+}
+.wcf-embed-checkout-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #1A35FF; !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #1A35FF transparent transparent transparent;
+}
+.wcf-embed-checkout-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 18px !important;
+    line-height: 21px !important;
+	font-weight: 500;
+}
+.select2-container--default .select2-selection--single {
+    padding: 16px 17px !important;
+    min-height: 55px !important;
+}
+.wcf-embed-checkout-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #6764FA !important;
+}
+
+
+
